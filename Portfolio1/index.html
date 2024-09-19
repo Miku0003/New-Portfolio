@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miku's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Port<span style="color: aqua;">folio</span></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Servises</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class='bx bx-x' onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-menu' onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software <span style="color: aqua;">Engineer</span></p>
+                <h1>Hii,<span style="color: #ccc;"> I'm</span><br><span>Miku Kumar</span> <br> from <span style="color: rgb(223, 163, 23);">Ahmedabad.</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ___________________________A_B_O_U_T___________________________ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/miku.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span style="color: aqua;">Me</span></h1>
+                    <p>
+                        A Developer with a broad understanding of Computer Science . A quick learner who
+                wants to know the best techniques to implement the project. Addicted to new and
+                creative ideas. Plan execution in a timely manner.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Create Projects</li>
+                            <li><span>JavaScript</span><br>Intermideate Level</li>
+                            <li><span>C/C++</span><br>Intermideate Level</li>
+                            <li><span>SQL</span><br>Intermideate Level</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>CodeSoft</span><br>Internship in Java Programming</li>
+                            <li><span>InternPe</span><br>Internship in Java</li>
+                            <li><span>Bharat Intern</span><br>Internship in App Developement</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>BCA from S.N. Sinha College, Jehanabad</li>
+                            <li><span>2021</span><br>XII from G.M. Inter School, Jehanabad</li>
+                            <li><span>2019</span><br>X from G.M. Inter School, Jehanabad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ___________________________S_E_R_V_I_S_E_S____________________________ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My<span style="color: aqua;"> Services</span></h1>
+            <div class="services-list">
+                <div>
+                     <i class='bx bx-code-alt' style="color: #00eeff"></i>
+                    <h2 style="color: #1285f3;">Web Design</h2>
+                    <p>
+                        Web design is the process of creating the visual aesthetics and user experience of websites.
+                        It encompasses various elements, including layout, color schemes, typography, images and navigation.
+                        Effective web design prioritizes usability and accessibility, ensuring that users can easily interact with the site 
+                        across different devices and screen sizes.
+                    </p>
+                    <a href="https://www.geeksforgeeks.org/web-design/" class="read" style="color: black;">Learn more</a>
+                </div>
+                <div>
+                     <i class='bx bx-cog'style="color: #00eeff" ></i>
+                    <h2 style="color: #1285f3;">Software Engineer</h2>
+                    <p>
+                        A software engineer is a professional who applies engineering principles to the design, 
+                        developement, testing and maintenance of software applications.
+                        They work with programming languages, frameworks and tools to
+                        create software solutions that meet user needs and solve specific problems.
+                    </p>
+                    <a href="https://www.computerscience.org/careers/software-engineer/" class="read" style="color: black;">Learn more</a>
+                </div>
+                <div>
+                     <i class='bx bxl-java' style="color: #00eeff" ></i>
+                    <h2 style="color: #1285f3;">Java Developer</h2>
+                    <p>
+                        A java developer is a software engineer who specializes in using the Java programming Language to build applications 
+                        and systems. The are responsible designing, developing, testing, and maintaining Java-based software solutions, which can range from web applications
+                        to mobile apps and enterprise-level systems.
+                    </p>
+                    <a href="https://www.coursera.org/articles/java-developer" class="read" style="color: black;">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- __________________________P_O_R_T_F_O_L_I_O_______________________________________ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My<span style="color: aqua;"> Work</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/ATM.jpg" alt="">
+                    <div class="layer">
+                        <h3><b>The ATM Simulator System</b></h3>
+                        <p><b>The ATM Simulator System allows users to perform essential operations such as Cash Withdrawls, Deposits, Balance Inquaries, Mini Statement, Fat Cash and PIN Change. 
+                            This project aims to provide users with a realistic experience of banking transactions.</b></p>
+                        <a href="https://github.com/Miku0003/ATM-Simulator-System"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/airline.jpg" alt="">
+                    <div class="layer">
+                        <h3><b>Airline Management System</b></h3>
+                        <p><b>The Airline Management System is a comprehensive software applicatin developed in java. 
+                            Administrators can Add, Update and Delete flight schedules. 
+                            This project features a user-friendly interface built in Java Swing and JDBC.
+                        </b></p>
+                        <a href="https://github.com/Miku0003/Airline-Management-System"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/chatting.jpg" alt="">
+                    <div class="layer">
+                        <h3><b>Chatting Application</b></h3>
+                        <p><b>The Chatting Application is a robust and scalable chatting application designed to facilitate real-time communication between users. 
+                            The Project aims to crate a user-friendly interface that allows individuals to connect and chat.
+                        </b></p>
+                        <a href="https://github.com/Miku0003/Chating-Application"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Miku0003" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ______________________________C_O_N_T_A_C_T_____________________________ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span style="color: aqua;">Me</span></h1>
+                    
+                    <p><i class='bx bx-send' ></i>mikunawada1208@gmail.com</p>
+                    <p><i class='bx bx-phone-call' ></i>+91-9097039388</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/miku.kumar.18041092"><i class='bx bxl-facebook-circle' ></i></a>
+                        <a href="https://www.instagram.com/mikukumar1208/?next=%2F"><i class='bx bxl-instagram' ></i></i></a>
+                        <a href="https://x.com/MikuKum19188475?t=XwUaXdfgUWGAS6IXbP7PYQ&s=09"><i class='bx bxl-twitter' ></i></i></a>
+                        <a href="https://www.linkedin.com/in/miku-kumar/"><i class='bx bxl-linkedin' ></i></i></a>
+                        <a href="https://github.com/Miku0003"><i class='bx bxl-github' ></i></i></a>
+                    </div>
+                    <a href="image/MikuResume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class='bx bx-copyright' ></i> Miku. Made with <i class='bx bxs-heart' style='color:#ef1515'  ></i> by Miku Tech Lover</p>
+        </div>
+    </div>
+
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby5S38QihhPOGR16E33CMf8adH7CIqh9Jl8cNE-ay8ltLtN1DVs4toRgRlTkx3s9g2C/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
