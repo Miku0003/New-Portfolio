@@ -78,6 +78,11 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #0ef;
 }
+.button{
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+}
 /* _________________________A_B_O_U_T__________________________ */
 #about{
     padding: 80px 0;
