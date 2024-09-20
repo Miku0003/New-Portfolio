@@ -205,9 +205,9 @@ nav ul li a:hover::after{
 .read:hover{
     box-shadow: 0 0 5px cyan,
     0 0 25px cyan,
-    0 0 50px cyan,
-    0 0 100px cyan,
-    0 0 200px cyan;
+    0 0 25px cyan,
+    0 0 25px cyan,
+    0 0 25px cyan;
 }
 
 /* __________________________P_O_R_T_F_O_L_I_O_______________________________________ */
@@ -307,9 +307,9 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
     box-shadow: 0 0 5px cyan,
     0 0 25px cyan,
-    0 0 50px cyan,
-    0 0 100px cyan,
-    0 0 200px cyan;
+    0 0 25px cyan,
+    0 0 25px cyan,
+    0 0 25px cyan;
 }
 
 /* ______________________________C_O_N_T_A_C_T_____________________________ */
@@ -405,7 +405,7 @@ nav .bx{
         background-image: url(image/phone.jpg);
     }
     .header-text{
-        margin-top: 150%;
+        margin-top: 140%;
         font-size: 16px;
     }
     .header-text h1{
