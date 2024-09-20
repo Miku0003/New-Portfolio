@@ -79,7 +79,7 @@ nav ul li a:hover::after{
     color: #0ef;
 }
 .button{
-    display:inline-block;
+    display: inline-block;
     align-items: center;
     justify-content: center;
 }
@@ -292,9 +292,16 @@ nav ul li a:hover::after{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #000;
+    color: #081b29;
     background: #0ef;
     transition: background 0.5s, transform 0.5s;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px aqua,
+    0 0 25px aqua;
 }
 .btn:hover{
     transform: translateY(-10px);
