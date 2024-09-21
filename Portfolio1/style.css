@@ -31,10 +31,20 @@ body{
     padding: 10px 10%;
 }
 nav{
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10%;
+    background: #051129;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
 }
 .logo{
     width: 140px;
@@ -410,6 +420,17 @@ nav .bx{
     }
     .header-text h1{
         font-size: 30px;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 10%;
+        background: #051129;
+        display: flex;
+        justify-content: space-between;
+        z-index: 100;
     }
     nav .bx{
         display: block;
