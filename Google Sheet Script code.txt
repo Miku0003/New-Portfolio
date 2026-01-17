@@ -1,4 +1,4 @@
-var sheetName = 'Sheet1'
+var sheetName = 'Contact'
 var scriptProp = PropertiesService.getScriptProperties()
 
 function intialSetup () {
@@ -37,4 +37,5 @@ function doPost (e) {
   finally {
     lock.releaseLock()
   }
+
 }
